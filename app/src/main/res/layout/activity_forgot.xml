@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Forgot"
+    android:orientation="vertical">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/forgotanim"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Reset Password"
+        android:textSize="22sp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/teal_700"
+        android:textStyle="normal|bold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bottomborder"
+        >
+        <ImageView
+            android:layout_width="20dp"
+            android:background="@drawable/user"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"/>
+        <EditText
+            android:id="@+id/fUserName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Enter Roll Number"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sendOtp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:text="Send OTP"
+        android:backgroundTint="@color/teal_700"
+        android:gravity="center"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:id="@+id/otpLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:visibility="gone"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bottomborder"
+        >
+        <ImageView
+            android:layout_width="20dp"
+            android:background="@drawable/otp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"/>
+        <EditText
+            android:id="@+id/otp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Enter OTP"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/verifyOtp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:text="Verify"
+        android:backgroundTint="@color/teal_700"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textColor="@color/white"/>
+
+
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    app:strokeWidth="0.5dp"
+    app:strokeColor="@color/teal_700"
+   android:id="@+id/cardItem"
+    android:layout_height="205dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="20dp"
+    app:cardCornerRadius="10dp"
+    android:orientation="vertical"
+    >
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="70dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="100dp"
+                android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                />
+            </com.google.android.material.card.MaterialCardView>
+            <TextView
+                android:id="@+id/cname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:textStyle="bold|normal"
+                android:textSize="16sp"
+                android:text="Nucleus Softwares Exports Ltd."/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/teal_700"
+                android:layout_weight="0.9"
+                android:textSize="16sp"
+                android:textStyle="bold|normal"
+                android:text="Company Type"/>
+            <TextView
+                android:id="@+id/ctype"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="0.9"
+                android:textSize="14sp"
+                android:textStyle="italic|normal"
+                android:text="Product"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="0.9"
+                android:textSize="16sp"
+                android:textStyle="bold|normal"
+                android:textColor="@color/teal_700"
+                android:text="Position Offered"/>
+            <TextView
+                android:id="@+id/role"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="0.9"
+                android:textSize="14sp"
+                android:textStyle="italic|normal"
+                android:text="ASE"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="0.9"
+                android:textSize="16sp"
+                android:textStyle="bold|normal"
+                android:textColor="@color/teal_700"
+                android:text="CTC offered"/>
+            <TextView
+                android:id="@+id/ctc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="0.9"
+                android:textSize="14sp"
+                android:textStyle="italic|normal"
+                android:text="4.33 LPA"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="0.9"
+                android:textSize="16sp"
+                android:textStyle="bold|normal"
+                android:textColor="@color/teal_700"
+                android:text="Location"/>
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="0.9"
+                android:textSize="14sp"
+                android:textStyle="italic|normal"
+                android:text="Noida"/>
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>
