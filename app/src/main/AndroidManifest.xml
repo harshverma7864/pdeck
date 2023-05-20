@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.pdeck">
+    package="com.example.AiHub">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -17,7 +17,28 @@
         android:theme="@style/Theme.Way2job"
         tools:targetApi="31">
         <activity
-            android:name=".Loginactivity"
+            android:name=".TextAnalyzer"
+            android:exported="false" />
+        <activity
+            android:name=".ObjectDetection"
+            android:exported="false" />
+        <activity
+            android:name=".ImageGenrator"
+            android:exported="false" />
+        <activity
+            android:name=".GptActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SpeechRecogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,27 +46,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity
-            android:name=".Profile"
-            android:exported="false" />
-        <activity
-            android:name=".Forgot"
-            android:exported="false" />
-        <activity
-            android:name=".Register"
-            android:exported="false" />
         <activity
             android:name=".NewDash"
-            android:exported="true"/>
-        <activity
-            android:name=".RoundsInformation"
-            android:exported="false" />
-        <activity
-            android:name=".CardsRecyclerView"
-            android:exported="false" />
-        <activity
-            android:name=".CardsInfo"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

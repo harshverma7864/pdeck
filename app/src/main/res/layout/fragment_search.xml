@@ -3,12 +3,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.SearchFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Search" />
+ <com.google.android.material.card.MaterialCardView
+     android:layout_width="match_parent"
+     android:layout_height="70dp"
+     android:elevation="100dp"
+     app:cardCornerRadius="15dp"
+     android:layout_margin="15dp"
+     android:padding="10dp"
+     android:gravity="center">
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:gravity="center"
+         android:textColor="@color/teal_700"
+         android:textStyle="bold|normal"
+         android:text="No New Notifications"/>
+
+ </com.google.android.material.card.MaterialCardView>
 
 </FrameLayout>

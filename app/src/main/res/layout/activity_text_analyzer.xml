@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TextAnalyzer"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/teal_700">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Text Analyzer"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:textStyle="bold|normal"/>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+
+    <EditText
+        android:id="@+id/analyzer"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="30dp"
+        android:padding="5dp"
+        android:hint="Paste Your Text Here To Analyze"/>
+
+    <Button
+        android:id="@+id/analyze"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:text="Analyze"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="Total Words : "
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textStyle="bold|normal"
+            android:textColor="@color/teal_700"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tWords"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/teal_700"
+            android:paddingLeft="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="Total Commas : "
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textStyle="bold|normal"
+            android:textColor="@color/teal_700"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tCommas"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/teal_700"
+            android:paddingLeft="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="Total Full Stops : "
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textStyle="bold|normal"
+            android:textColor="@color/teal_700"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tfullStops"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/teal_700"
+            android:paddingLeft="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="Total Spaces : "
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textStyle="bold|normal"
+            android:textColor="@color/teal_700"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tSpaces"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/teal_700"
+            android:paddingLeft="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="Total Letters : "
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textStyle="bold|normal"
+            android:textColor="@color/teal_700"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tLetters"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/teal_700"
+            android:paddingLeft="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="Total Vowels : "
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textStyle="bold|normal"
+            android:textColor="@color/teal_700"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tVowels"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/teal_700"
+            android:paddingLeft="10dp"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
