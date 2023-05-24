@@ -23,9 +23,9 @@ public class API {
     public static String API_URL = "https://api.openai.com/v1/completions";
     public static String API = "Your API Key Here";
 
-    private static String LOGINAPI = DOMAIN_NAME+"validateLogin.php";
-    private static String REGISTERAPI = DOMAIN_NAME+"registerUser.php";
-    private static String RSTAPI = DOMAIN_NAME+"resetPass.php";
+    private static String LOGINAPI = DOMAIN_NAME+"Your Login File Name";
+    private static String REGISTERAPI = DOMAIN_NAME+"Your Registration Api file Name";
+    private static String RSTAPI = DOMAIN_NAME+"Your File Name";
 
 
     public static void validateLogin(String username , String password, Context context) {
@@ -36,7 +36,7 @@ public class API {
         // on below line we are calling a string
         // request method to post the data to our API
         // in this we are calling a post method.
-        StringRequest request = new StringRequest(Request.Method.POST, "https://way2job.shodns.in/AIHUB/validateLogin.php", new com.android.volley.Response.Listener<String>() {
+        StringRequest request = new StringRequest(Request.Method.POST, LOGINAPI, new com.android.volley.Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 if (response.split(",")[0].equals("success")) {
