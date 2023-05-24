@@ -21,7 +21,7 @@ public class API {
 
     private static String DOMAIN_NAME = "https://way2job.shodns.in/AIHUB/";
     public static String API_URL = "https://api.openai.com/v1/completions";
-    public static String API = "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";
+    public static String API = "Your API Key Here";
 
     private static String LOGINAPI = DOMAIN_NAME+"validateLogin.php";
     private static String REGISTERAPI = DOMAIN_NAME+"registerUser.php";
